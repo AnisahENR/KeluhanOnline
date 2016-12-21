@@ -1,0 +1,144 @@
+body {
+    background-color: #4E4E4E;
+    background-image: url("gambar/5.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+#container{
+	background-color : white;
+	margin-top : 10px;
+	margin-left : auto;
+	margin-right:auto;
+	color:#053d4f;
+	/*width : 1200px;*/
+	
+}
+#wrapper {
+    background-color : #dd1334;
+	height : 39px;
+	border-bottom : 1px solid #fff;
+	font-size :16px;
+}
+#wrapper ul{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+#wrapper ul  li {
+	float:left;
+	position : relative;
+}
+#wrapper ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	text-decoration:none;
+	font-family: calibri;
+	
+}
+#wrapper ul li a:hover{
+	background-color:#a80b24;
+}
+/* Menu Dropdown */
+#wrapper ul li ul {
+	display:none;
+	
+}
+#navigation ul li:hover ul {
+	display:block;
+	position: absolute;
+}
+#wrapper ul li:hover ul li a {
+	display:block;
+	background-color : black;
+	color : #a80b24;
+	width : 150px;
+	border-bottom : 1px solid #ccc;
+}
+		
+#wrapper ul li:hover ul li a:hover {
+	background-color : #a80b24;
+}		
+#wrapper ul li:hover > a {background: #a80b24;}
+#slideshow{
+	background-image :url("gambar/gambar1.jpg")
+}
+#content {
+    width: 800px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 50px;
+	margin-bottom:10px;
+	
+	border: 1px;              /* fill up the entire div */
+}
+  
+#userbar {
+    float: right;
+    height: auto;
+	padding-top : 10px;
+	padding-right : 25px;
+	font-family : calibri;
+	text-decoration : none;
+	color : white;
+}
+#userbar a {
+	color : white;
+	height : 480px;
+}
+ 
+ 
+/* style table */
+
+ 
+/* Begin font styles */
+h1 {
+    font-family: Helvetica Rounded;
+    color: #9b0614;
+	text-align : center;
+}
+ 
+h4 {margin: 0; padding: 0;}
+ 
+/* Menu styles */ 
+.topic-post {
+    height: 60px;
+    overflow: auto;
+}
+ 
+.post-content {
+    padding:50px;
+}
+ 
+textarea {
+	padding-left:10px;
+	margin-left:10px;
+    width: 500px;
+    height: 200px;
+}
+#view{
+	padding-left : 20px;
+	padding-bottom :20px;
+	text-align : center;
+}
+#nama{
+	color : white;
+	font-size : 14px;
+	font-family : helvetica rounded;
+}
+#keluhan{
+	padding-left : 25px;
+	padding-top : 25px;
+	padding-bottom: 15px;
+}
+#form{
+	padding: 25px 0px 25px 30px;
+}
+#footer {
+	background-color : #b70321;
+	text-align : center;
+    font-size: 75%;
+	color : white;
+    padding: 5px 0 3px 0;
+}
