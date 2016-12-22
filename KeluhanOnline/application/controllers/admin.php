@@ -11,32 +11,11 @@ function Admin() {
 	}
 
 public function index(){
-	$this->load->view('form_login.php');
-}
-
-public function home(){
-	$this->load->model('m_login');
-    $user = $this->session->userdata('username');
-    $data['level'] = $this->session->userdata('level');        
-    $data['pengguna'] = $this->m_login->dataPengguna($user);
-	$this->load->view('index_admin.php', $data);
+	$this->load->view('index_admin.php');
 }
 function layanan_admin(){
 	$this->load->view('layanan_admin.php');
 }
-
-function layanan_ktp_admin(){
-	$this->load->model('admin_model');
-	$data['query']=$this->admin_model->data_ktp();
-	$this->load->view('layanan_ktp_admin.php', $data);
-}
-
-function layanan_kk_admin(){
-	$this->load->model('admin_model');
-	$data['query']=$this->admin_model->data_kk();
-	$this->load->view('layanan_kk_admin.php', $data);
-}
-
 function keluhan_admin(){
 	$this->load->model('admin_model');
 	$data['query']=$this->admin_model->keluhan();

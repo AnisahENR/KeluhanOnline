@@ -1,13 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<?php
-if (isset($this->session->userdata['isLogin'])) {
-$username = ($this->session->userdata['isLogin']['username']);
-} else {
-header("location: form_login");
-}
-?>
-
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -17,21 +9,20 @@ header("location: form_login");
 </head>
 <div id="nama">
 HALAMAN AWAL ADMIN !
-Hello, <b><?php echo $pengguna->name;?></b>
 </div>
 <body>
 	<div id="container"></br>
 	<h1> KELUHAN ONLINE </h1>
 		<div id="wrapper">
 			<ul id="menu">
-			<li><?php echo anchor(base_url().'index.php/admin/home','Beranda');?></li>
+			<li><?php echo anchor(base_url().'index.php/admin/index','Beranda');?></li>
 			<li><?php echo anchor(base_url().'index.php/admin/keluhan_admin','Keluhan');?></li>
-			<li><?php echo anchor(base_url().'index.php/admin/data_user','Data User');?></li>
+			<li><?php echo anchor(base_url().'#','Data User');?></li>
 			</ul>
-		<div id="userbar">
-			<?php echo anchor(base_url().'index.php/login/logout','Logout');?>
-		</div>
 	</div>
+	<div id="image">
+		<img src="<?php echo base_url('image/satu.jpg'); ?>" width="100%">
+		</div>
 	<div id="footer">
 	<p><center>Copyright &copy; 2016 KELOMPOK MKPL </center></p>
 	</div>
