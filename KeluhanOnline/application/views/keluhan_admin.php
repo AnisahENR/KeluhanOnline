@@ -21,7 +21,7 @@ header("location: index");
 	<h1><br>KELUHAN ONLINE</h1>
         <div id="wrapper">
 			<ul id="menu">
-			<li><?php echo anchor(base_url().'index.php/admin/home','Beranda');?></li>
+			<li><?php echo anchor(base_url().'index.php/admin/index','Beranda');?></li>
 			<li><?php echo anchor(base_url().'index.php/admin/keluhan_admin','Keluhan');?></li>
 			<li><?php echo anchor(base_url().'#','Data User');?></li>
 			</ul>
