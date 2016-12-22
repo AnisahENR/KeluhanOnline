@@ -46,36 +46,4 @@ public function form_keluhan(){
 		}
 	}
 }
-//function albums(){
-//	$this->load->model('maroon5_model');
-//	$data['query']=$this->maroon5_model->db_album();
-//	$this->load->view('albums.php', $data);
-//}
-//
-//function news(){
-//	$this->load->model('maroon5_model');
-//	$data['query']=$this->maroon5_model->news();
-//	$this->load->view('news.php', $data);
-//}
-//
-//function member_view(){
-//	$this->load->view('member_view.php');
-//}
-//
-//function signin(){
-//	$this->load->view('form_login.php');
-//}
-//
-//function admin_page(){
-//	$this->load->view('admin_page.php');
-//}
-//
-//function member_page(){
-//	$this->load->view('member_page.php');
-//}	
-//
-//function readmore(){
-//	$this->load->view('readmore.php');
-//}
-
 }
