@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Pengguna extends CI_Controller {
-function Pengguna() {
+class User extends CI_Controller {
+function User() {
 		parent::__construct();	
 		//session_start();
 		$this->load->helper(array('form','url', 'text_helper'));
