@@ -104,7 +104,7 @@ Sudah punya akun? Silahkan <a href="<?php echo base_url() ?>index.php/login/logi
 </div>
 
 <div class="footer">
-	<p><center>Copyright &copy; 2015 RPL KELOMPOK 8</center></p>
+	<p><center>Copyright &copy; 2016 KELOMPOK MKPL </center></p>
 </div>
 </body>
 </html>
