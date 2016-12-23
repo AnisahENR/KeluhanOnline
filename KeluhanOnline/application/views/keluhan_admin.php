@@ -23,7 +23,7 @@ header("location: index");
 			<ul id="menu">
 			<li><?php echo anchor(base_url().'index.php/admin/index','Beranda');?></li>
 			<li><?php echo anchor(base_url().'index.php/admin/keluhan_admin','Keluhan');?></li>
-			<li><?php echo anchor(base_url().'#','Data User');?></li>
+			<li><?php echo anchor(base_url().'index.php/admin/data_user','Data User');?></li>
 			</ul>
 		</div>
 	<br>
@@ -41,6 +41,7 @@ header("location: index");
 		<td><?php echo $lihat->username; ?></td>
 		<td><?php echo $lihat->keluhan; ?></td>
 		<td align="center"><a href="<?php echo base_url(); ?>index.php/admin/hapus_keluhan/<?php echo $lihat->id_keluhan; ?>">Hapus Keluhan</a></td>
+		<td align="center"><a href='<?php echo base_url()."index.php/admin/notifikasi/".$lihat->username;?>'>Notifikasi</a></td>
 		<?php /*?><td align="center"><a href='<?php echo base_url();?>index.php/admin/hapus_keluhan/".<?php echo$lihat->id_keluhan;?>'>Hapus Keluhan</a></td><?php */?>
 	
 	<?php 
