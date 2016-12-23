@@ -12,17 +12,22 @@ header("location: form_login");
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>KELUHAN ONLINE</title>
+<link rel="stylesheet" href="<?= base_url().'css/style.css';?>" type="text/css" media="all" />
 </head>
-
+<div id="nama">
+HALAMAN AWAL ADMIN !
+</div>
 <body>
-	<center>
-	<?php echo anchor(base_url().'index.php/admin/home','Beranda');?>
-	<?php echo anchor(base_url().'index.php/admin/layanan_admin','Layanan');?>
-	<?php echo anchor(base_url().'index.php/admin/keluhan_admin','Keluhan');?>
-	<?php echo anchor(base_url().'index.php/admin/data_user','Data User');?>
-	<?php echo anchor(base_url().'index.php/login/logout','Logout');?>
-	<br /><br /><br />
-	
+	<div id="container"></br>
+	<h1> KELUHAN ONLINE </h1>
+	<div id="wrapper">
+			<ul id="menu">
+			<li><?php echo anchor(base_url().'index.php/admin/index','Beranda');?></li>
+			<li><?php echo anchor(base_url().'index.php/admin/keluhan_admin','Keluhan');?></li>
+			<li><?php echo anchor(base_url().'index.php/admin/data_user','Data User');?></li>
+			</ul>
+	</div>
+	<div id="notif">
 	NOTIFIKASI ADMIN <br />
 	<form action="<?php echo base_url();?>index.php/notifikasi/form_notifikasi" method="post" name="kirim">
 	<table border="0" cellpadding="4" bordercolor="#FFFFFF">
@@ -48,13 +53,6 @@ header("location: form_login");
 	<?php echo form_error('nama');?>
 	</td>
 	</tr>
-	
-	<tr>
-	<td>Tanggal Ambil</td>
-	<td>:</td>
-	<td><input type="text" size="40" name="tanggal" value="<?php echo set_value('tanggal');?>" class="inputan"></td>
-	</tr>
-	
 	
 	<tr>
 	<td>&nbsp;</td>
