@@ -17,7 +17,7 @@ HALAMAN AWAL ADMIN !
 			<ul id="menu">
 			<li><?php echo anchor(base_url().'index.php/admin/index','Beranda');?></li>
 			<li><?php echo anchor(base_url().'index.php/admin/keluhan_admin','Keluhan');?></li>
-			<li><?php echo anchor(base_url().'#','Data User');?></li>
+			<li><?php echo anchor(base_url().'index.php/admin/data_user','Data User');?></li>
 			</ul>
 	</div>
 	<div id="image">

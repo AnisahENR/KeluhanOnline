@@ -61,9 +61,8 @@ function hapus_user()
 			$this->admin_model->delete_user($id_user);
 	   		echo "<meta http-equiv='refresh' content='0; url=".base_url()."index.php/admin/data_user'>";
 		
-	}
-	
-function notifikasi($username){
+	}	
+	function notifikasi($username){
 	$this->load->model('m_login');
     $user = $this->session->userdata('username');       
     $data['user'] = $this->m_login->dataPengguna($user);
@@ -71,5 +70,6 @@ function notifikasi($username){
     $data['pengguna'] = $username;
 	$this->load->view('notif_admin', $data);
 }
+	
 	
 }
