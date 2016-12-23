@@ -135,6 +135,11 @@ textarea {
 #form{
 	padding: 25px 0px 25px 30px;
 }
+#notif{
+	padding-left: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
 #footer {
 	background-color : #b70321;
 	text-align : center;
