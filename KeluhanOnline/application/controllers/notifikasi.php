@@ -25,7 +25,6 @@ public function form_notifikasi(){
 	$this->form_validation->set_rules('admin', 'Dari', 'required|trim|xss_clean');
 	$this->form_validation->set_rules('user', 'Kepada', 'required|trim|xss_clean');
 	$this->form_validation->set_rules('pesan', 'Pesan', 'required|trim|xss_clean');
-	$this->form_validation->set_rules('tanggal', 'Tanggal Ambil', 'required|trim|xss_clean');
 	
 	if ($this->form_validation->run() == FALSE) {
 		$this->load->view('notif_admin');
@@ -33,10 +32,9 @@ public function form_notifikasi(){
 				$data['nama_pengirim']=$this->input->post('admin');
 				$data['nama_penerima']=$this->input->post('user');
 				$data['pesan']=$this->input->post('pesan');
-				$data['tanggal_ambil']=$this->input->post('tanggal');
 				
 				$this->m_notifikasi->insert($data);
-				echo "<meta http-equiv='refresh' content='0; url=".base_url()."index.php/admin/home'>";
+				echo "<meta http-equiv='refresh' content='0; url=".base_url()."index.php/admin/index'>";
 			
 		}	
 }
