@@ -1,5 +1,5 @@
 <?php
-class User_model extends CI_Model{
+class User_model extends CI_Model{ //meita upload
 		function User_model()
 		{
 			parent::__construct();
